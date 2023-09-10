@@ -68,36 +68,11 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_front_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_rear_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        left_wheel_set:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        right_front_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_rear_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_wheel_set:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -115,19 +90,9 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        base_footprint:
+          Value: true
         base_link:
-          Value: true
-        left_front_wheel:
-          Value: true
-        left_rear_wheel:
-          Value: true
-        left_wheel_set:
-          Value: true
-        right_front_wheel:
-          Value: true
-        right_rear_wheel:
-          Value: true
-        right_wheel_set:
           Value: true
       Marker Scale: 0.30000001192092896
       Name: TF
@@ -135,18 +100,8 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        base_link:
-          left_front_wheel:
-            {}
-          left_rear_wheel:
-            {}
-          left_wheel_set:
-            {}
-          right_front_wheel:
-            {}
-          right_rear_wheel:
-            {}
-          right_wheel_set:
+        base_footprint:
+          base_link:
             {}
       Update Interval: 0
       Value: true
@@ -196,25 +151,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.5606809258460999
+      Distance: 1.95035719871521
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.030389077961444855
-        Y: 0.0181866567581892
-        Z: -0.03157774358987808
+        X: -0.023875219747424126
+        Y: -0.31253355741500854
+        Z: -0.019944392144680023
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6453980803489685
+      Pitch: 0.6997971534729004
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.858585357666016
+      Yaw: 5.578588962554932
     Saved: ~
 Window Geometry:
   Displays:
@@ -232,5 +187,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1200
-  X: 505
-  Y: 133
+  X: 70
+  Y: 111
