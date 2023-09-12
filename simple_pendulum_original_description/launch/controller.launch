@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find simple_pendulum_original_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="simple_pendulum_original" args="È¸Àü 14_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/simple_pendulum_original/joint_states"/>
+</node>
+
+</launch>

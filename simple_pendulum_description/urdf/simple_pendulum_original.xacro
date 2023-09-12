@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<robot name="simple_pendulum_original" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!-- <xacro:include filename="$(find simple_pendulum_description)/urdf/materials.xacro" /> -->
+<!-- <xacro:include filename="$(find simple_pendulum_description)/urdf/simple_pendulum_original.trans" /> -->
+<!-- <xacro:include filename="$(find simple_pendulum_description)/urdf/simple_pendulum_original.gazebo" /> -->
+
+  <link name="base_link">
+    <inertial>
+      <origin xyz="9.932865818850548e-08 -0.33627943579696945 0.02049961178533386" rpy="0 0 0"/>
+      <mass value="0.7536951069709015"/>
+      <inertia ixx="0.032354" iyy="0.011027" izz="0.043132" ixy="0.0" iyz="-0.000132" ixz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://simple_pendulum_description/meshes/original/base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://simple_pendulum_description/meshes/original/base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="t_motor_ak80_64_body_1">
+    <inertial>
+      <origin xyz="5.948740960092451e-05 -6.346438584704499e-05 0.02295702337201088" rpy="0 0 0"/>
+      <mass value="0.36079490064174746"/>
+      <inertia ixx="0.000283" iyy="0.000283" izz="0.000417" ixy="1e-06" iyz="-1e-06" ixz="1e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 -0.0 -0.037" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://simple_pendulum_description/meshes/original/t_motor_ak80_64_body_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 -0.0 -0.037" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://simple_pendulum_description/meshes/original/t_motor_ak80_64_body_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="pendulum_1">
+    <inertial>
+      <origin xyz="-1.4506959721905796e-13 -0.18227708910651447 0.02951818978186932" rpy="0 0 0"/>
+      <mass value="0.6431423721098951"/>
+      <inertia ixx="0.009741" iyy="0.000732" izz="0.009345" ixy="0.0" iyz="0.001265" ixz="-0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 -0.0877" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://simple_pendulum_description/meshes/original/pendulum_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 -0.0877" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://simple_pendulum_description/meshes/original/pendulum_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="fixed_joint" type="fixed">
+    <origin xyz="0.0 0.0 0.037" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="t_motor_ak80_64_body_1"/>
+  </joint>
+
+  <joint name="continuous_joint" type="continuous">
+    <origin xyz="0.0 -0.0 0.0507" rpy="0 0 0"/>
+    <parent link="t_motor_ak80_64_body_1"/>
+    <child link="pendulum_1"/>
+    <axis xyz="-0.0 -0.0 1.0"/>
+  </joint>
+
+</robot>
