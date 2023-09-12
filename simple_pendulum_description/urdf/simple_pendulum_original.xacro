@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <robot name="simple_pendulum_original" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<!-- <xacro:include filename="$(find simple_pendulum_description)/urdf/materials.xacro" /> -->
+<xacro:include filename="$(find simple_pendulum_description)/urdf/materials.xacro" />
 <!-- <xacro:include filename="$(find simple_pendulum_description)/urdf/simple_pendulum_original.trans" /> -->
 <!-- <xacro:include filename="$(find simple_pendulum_description)/urdf/simple_pendulum_original.gazebo" /> -->
 
@@ -14,14 +14,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://simple_pendulum_description/meshes/original/base_link.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file://$(find simple_pendulum_description)/meshes/original/base_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://simple_pendulum_description/meshes/original/base_link.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file://$(find simple_pendulum_description)/meshes/original/base_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -35,14 +35,14 @@
     <visual>
       <origin xyz="0.0 -0.0 -0.037" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://simple_pendulum_description/meshes/original/t_motor_ak80_64_body_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file://$(find simple_pendulum_description)/meshes/original/t_motor_ak80_64_body_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin xyz="0.0 -0.0 -0.037" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://simple_pendulum_description/meshes/original/t_motor_ak80_64_body_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file://$(find simple_pendulum_description)/meshes/original/t_motor_ak80_64_body_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -56,14 +56,14 @@
     <visual>
       <origin xyz="0.0 0.0 -0.0877" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://simple_pendulum_description/meshes/original/pendulum_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file://$(find simple_pendulum_description)/meshes/original/pendulum_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin xyz="0.0 0.0 -0.0877" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://simple_pendulum_description/meshes/original/pendulum_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file://$(find simple_pendulum_description)/meshes/original/pendulum_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
