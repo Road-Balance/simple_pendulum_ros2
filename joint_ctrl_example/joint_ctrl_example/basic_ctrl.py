@@ -37,8 +37,8 @@ class TestROS2Bridge(Node):
         self.default_joints = [0.0]
 
         # limiting the movements to a smaller range (this is not the range of the robot, just the range of the movement
-        self.max_joints = np.array(self.default_joints) + 0.5
-        self.min_joints = np.array(self.default_joints) - 0.5
+        self.max_joints = np.array(self.default_joints) + 3.14
+        self.min_joints = np.array(self.default_joints) - 3.14
 
         # position control the robot to wiggle around each joint
         self.time_start = time.time()
