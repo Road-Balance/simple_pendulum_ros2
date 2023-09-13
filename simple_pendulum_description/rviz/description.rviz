@@ -68,11 +68,22 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_footprint:
+        base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        base_link:
+          Value: true
+        circular_mass_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        pendulum_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        tmotor_ak80_64_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -90,9 +101,13 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        base_footprint:
-          Value: true
         base_link:
+          Value: true
+        circular_mass_1:
+          Value: true
+        pendulum_1:
+          Value: true
+        tmotor_ak80_64_1:
           Value: true
       Marker Scale: 0.30000001192092896
       Name: TF
@@ -100,9 +115,11 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        base_footprint:
-          base_link:
-            {}
+        base_link:
+          tmotor_ak80_64_1:
+            pendulum_1:
+              circular_mass_1:
+                {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -151,25 +168,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 1.95035719871521
+      Distance: 1.52827787399292
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.023875219747424126
-        Y: -0.31253355741500854
-        Z: -0.019944392144680023
+        X: -0.06039363518357277
+        Y: 0.02430923655629158
+        Z: 0.2662278413772583
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6997971534729004
+      Pitch: 0.40979745984077454
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.578588962554932
+      Yaw: 5.988590240478516
     Saved: ~
 Window Geometry:
   Displays:
@@ -187,5 +204,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1200
-  X: 70
-  Y: 111
+  X: 518
+  Y: 120
