@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'basic_ctrl = joint_ctrl_example.basic_ctrl:main',
+            'position_ctrl = joint_ctrl_example.position_ctrl:main',
+            'torque_ctrl   = joint_ctrl_example.torque_ctrl:main',
         ],
     },
 )
