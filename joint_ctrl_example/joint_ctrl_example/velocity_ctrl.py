@@ -18,7 +18,7 @@ import time
 class TestROS2Bridge(Node):
     def __init__(self):
 
-        super().__init__("position_ctrl")
+        super().__init__("velocity_ctrl")
 
         # Create the publisher. This publisher will publish a JointState message to the /joint_command topic.
         self.publisher_ = self.create_publisher(JointState, "joint_command", 10)
@@ -33,12 +33,12 @@ class TestROS2Bridge(Node):
         num_joints = len(self.joint_state.name)
 
         # make sure kit's editor is playing for receiving messages
-        self.joint_state.position = np.array([0.0] * num_joints, dtype=np.float64).tolist()
+        self.joint_state.velocity = np.array([0.0] * num_joints, dtype=np.float64).tolist()
         self.default_joints = [0.0]
 
         # limiting the movements to a smaller range (this is not the range of the robot, just the range of the movement
-        self.max_joints = np.array(self.default_joints) + 3.14
-        self.min_joints = np.array(self.default_joints) - 3.14
+        self.max_joints = np.array(self.default_joints) + 5.0
+        self.min_joints = np.array(self.default_joints) - 5.0
 
         # position control the robot to wiggle around each joint
         self.time_start = time.time()
@@ -49,10 +49,10 @@ class TestROS2Bridge(Node):
     def timer_callback(self):
         self.joint_state.header.stamp = self.get_clock().now().to_msg()
 
-        joint_position = (
+        joint_velocity = (
             np.sin(time.time() - self.time_start) * (self.max_joints - self.min_joints) * 0.5 + self.default_joints
         )
-        self.joint_state.position = joint_position.tolist()
+        self.joint_state.velocity = joint_velocity.tolist()
 
         # Publish the message to the topic
         self.publisher_.publish(self.joint_state)

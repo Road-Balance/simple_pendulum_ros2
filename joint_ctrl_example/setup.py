@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'position_ctrl = joint_ctrl_example.position_ctrl:main',
             'torque_ctrl   = joint_ctrl_example.torque_ctrl:main',
+            'velocity_ctrl = joint_ctrl_example.velocity_ctrl:main',
         ],
     },
 )

@@ -14,7 +14,9 @@ ros2 topic pub  /joint_command sensor_msgs/msg/JointState "{name: ['continuous_j
 ```
 
 ```
-ros2 run joint_ctrl_example basic_ctrl 
+ros2 run joint_ctrl_example position_ctrl 
+ros2 run joint_ctrl_example velocity_ctrl
+ros2 run joint_ctrl_example torque_ctrl 
 ```
 
 <p align="center">
