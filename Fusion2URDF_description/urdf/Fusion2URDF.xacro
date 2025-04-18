@@ -11,14 +11,14 @@
     <inertia ixx="0.29892" iyy="0.394886" izz="0.24856" ixy="0.003362" iyz="0.003339" ixz="-0.005604"/>
   </inertial>
   <visual>
-    <origin xyz="0.15 0.1 0" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find bj_actuator_rviz)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.15 0.1 0" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find bj_actuator_rviz)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -32,14 +32,14 @@
     <inertia ixx="0.002714" iyy="0.003585" izz="0.001392" ixy="-0.000166" iyz="0.00045" ixz="0.000773"/>
   </inertial>
   <visual>
-    <origin xyz="0.15 0.148 -0.02" rpy="0 0 0"/>
+    <origin xyz="-0.0 0.048 -0.02" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find bj_actuator_rviz)/meshes/motor_mount_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.15 0.148 -0.02" rpy="0 0 0"/>
+    <origin xyz="-0.0 0.048 -0.02" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find bj_actuator_rviz)/meshes/motor_mount_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -53,14 +53,14 @@
     <inertia ixx="0.000607" iyy="0.001141" izz="0.000598" ixy="-1e-06" iyz="3e-06" ixz="6e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.184875 0.23427 -0.11255" rpy="0 0 0"/>
+    <origin xyz="0.034875 0.13427 -0.11255" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find bj_actuator_rviz)/meshes/front_case_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.184875 0.23427 -0.11255" rpy="0 0 0"/>
+    <origin xyz="0.034875 0.13427 -0.11255" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find bj_actuator_rviz)/meshes/front_case_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -74,14 +74,14 @@
     <inertia ixx="0.000346" iyy="0.000681" izz="0.000363" ixy="1e-06" iyz="3e-06" ixz="1.2e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.184875 0.21 -0.11255" rpy="0 0 0"/>
+    <origin xyz="0.034875 0.11 -0.11255" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find bj_actuator_rviz)/meshes/rear_case_241023_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.184875 0.21 -0.11255" rpy="0 0 0"/>
+    <origin xyz="0.034875 0.11 -0.11255" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find bj_actuator_rviz)/meshes/rear_case_241023_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -95,14 +95,14 @@
     <inertia ixx="0.019268" iyy="0.036596" izz="0.019268" ixy="0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.184875 0.27717 0.07745" rpy="0 0 0"/>
+    <origin xyz="0.034875 0.17717 0.07745" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find bj_actuator_rviz)/meshes/mass_plate_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.184875 0.27717 0.07745" rpy="0 0 0"/>
+    <origin xyz="0.034875 0.17717 0.07745" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find bj_actuator_rviz)/meshes/mass_plate_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -116,14 +116,14 @@
     <inertia ixx="4e-06" iyy="8e-06" izz="4e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.184875 0.26687 -0.11255" rpy="0 0 0"/>
+    <origin xyz="0.034875 0.16687 -0.11255" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find bj_actuator_rviz)/meshes/bearing_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.184875 0.26687 -0.11255" rpy="0 0 0"/>
+    <origin xyz="0.034875 0.16687 -0.11255" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find bj_actuator_rviz)/meshes/bearing_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -137,14 +137,14 @@
     <inertia ixx="0.001228" iyy="0.001264" izz="4.1e-05" ixy="0.0" iyz="-2e-05" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.184875 0.26717 -0.11255" rpy="0 0 0"/>
+    <origin xyz="0.034875 0.16717 -0.11255" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find bj_actuator_rviz)/meshes/test_bar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.184875 0.26717 -0.11255" rpy="0 0 0"/>
+    <origin xyz="0.034875 0.16717 -0.11255" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find bj_actuator_rviz)/meshes/test_bar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -157,16 +157,22 @@
   <child link="motor_mount_1"/>
 </joint>
 
+<joint name="case_joint" type="fixed">
+  <origin xyz="0.0 -0.02427 0.0" rpy="0 0 0"/>
+  <parent link="rear_case_241023_1"/>
+  <child link="front_case_1"/>
+</joint>
+
 <joint name="mount_joint" type="fixed">
   <origin xyz="-0.034875 -0.062 0.09255" rpy="0 0 0"/>
   <parent link="motor_mount_1"/>
   <child link="rear_case_241023_1"/>
 </joint>
 
-<joint name="case_joint" type="fixed">
-  <origin xyz="0.0 -0.02427 0.0" rpy="0 0 0"/>
-  <parent link="rear_case_241023_1"/>
-  <child link="front_case_1"/>
+<joint name="mass_joint" type="fixed">
+  <origin xyz="0.0 -0.01 -0.19" rpy="0 0 0"/>
+  <parent link="test_bar_1"/>
+  <child link="mass_plate_1"/>
 </joint>
 
 <joint name="gear_joint" type="fixed">
@@ -175,17 +181,10 @@
   <child link="bearing_1"/>
 </joint>
 
-<joint name="continuous_joint" type="continuous">
+<joint name="continuous_joint" type="fixed">
   <origin xyz="0.0 -0.0003 0.0" rpy="0 0 0"/>
   <parent link="bearing_1"/>
   <child link="test_bar_1"/>
-  <axis xyz="0.0 1.0 0.0"/>
-</joint>
-
-<joint name="mass_joint" type="fixed">
-  <origin xyz="0.0 -0.01 -0.19" rpy="0 0 0"/>
-  <parent link="test_bar_1"/>
-  <child link="mass_plate_1"/>
 </joint>
 
 </robot>

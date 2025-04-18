@@ -27,9 +27,9 @@ from launch.substitutions import (
 
 def generate_launch_description():
 
-    pkg_path = os.path.join(get_package_share_directory("simple_pendulum_description"))
+    pkg_path = os.path.join(get_package_share_directory("bj_actuator_rviz"))
     rviz_config_file = os.path.join(pkg_path, "rviz", "description.rviz")
-    urdf_file = os.path.join(pkg_path, "urdf", "test.urdf")
+    urdf_file = os.path.join(pkg_path, "urdf", "pendulum.urdf")
 
     joint_state_publisher_gui = Node(
         package="joint_state_publisher_gui",
