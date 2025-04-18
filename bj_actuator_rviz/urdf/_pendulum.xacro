@@ -1,9 +1,10 @@
 <?xml version="1.0" ?>
 <robot name="Fusion2URDF" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find Fusion2URDF_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find bj_actuator_rviz)/urdf/materials.xacro" />
 <!-- <xacro:include filename="$(find Fusion2URDF_description)/urdf/Fusion2URDF.trans" /> -->
 <!-- <xacro:include filename="$(find Fusion2URDF_description)/urdf/Fusion2URDF.gazebo" /> -->
+
 <link name="base_link">
   <inertial>
     <origin xyz="-0.15239089248396806 -0.10243188731128752 -0.014756658436731226" rpy="0 0 0"/>
@@ -13,14 +14,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +35,14 @@
   <visual>
     <origin xyz="0.15066 0.151463 -0.019629" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/motor_mount_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/motor_mount_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.15066 0.151463 -0.019629" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/motor_mount_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/motor_mount_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +56,14 @@
   <visual>
     <origin xyz="0.185535 0.237733 -0.112179" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/front_case_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/front_case_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.185535 0.237733 -0.112179" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/front_case_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/front_case_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +77,14 @@
   <visual>
     <origin xyz="0.185535 0.213463 -0.112179" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/rear_case_241023_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/rear_case_241023_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.185535 0.213463 -0.112179" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/rear_case_241023_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/rear_case_241023_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +98,14 @@
   <visual>
     <origin xyz="0.185535 0.271333 -0.112179" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/planetary_gearset_rotor_bottom_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/planetary_gearset_rotor_bottom_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.185535 0.271333 -0.112179" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/planetary_gearset_rotor_bottom_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/planetary_gearset_rotor_bottom_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +119,14 @@
   <visual>
     <origin xyz="0.185535 0.263333 -0.112179" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/bearing_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/bearing_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.185535 0.263333 -0.112179" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/bearing_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/bearing_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,14 +140,14 @@
   <visual>
     <origin xyz="-0.084798 0.455869 -0.224357" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/test_bar_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/test_bar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.084798 0.455869 -0.224357" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/test_bar_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/test_bar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -160,56 +161,56 @@
   <visual>
     <origin xyz="0.185535 0.280833 0.077821" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/mass_plate_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/mass_plate_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.185535 0.280833 0.077821" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Fusion2URDF_description/meshes/mass_plate_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find bj_actuator_rviz)/meshes/mass_plate_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<joint name="��ü 7" type="fixed">
+<joint name="base_joint" type="fixed">
   <origin xyz="-0.15066 -0.151463 0.019629" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="motor_mount_1"/>
 </joint>
 
-<joint name="��ü 9" type="fixed">
-  <origin xyz="0.0 -0.02427 0.0" rpy="0 0 0"/>
-  <parent link="rear_case_241023_1"/>
-  <child link="front_case_1"/>
-</joint>
-
-<joint name="��ü 10" type="fixed">
+<joint name="mount_joint" type="fixed">
   <origin xyz="-0.034875 -0.062 0.09255" rpy="0 0 0"/>
   <parent link="motor_mount_1"/>
   <child link="rear_case_241023_1"/>
 </joint>
 
-<joint name="��ü 11" type="fixed">
+<joint name="case_joint" type="fixed">
+  <origin xyz="0.0 -0.02427 0.0" rpy="0 0 0"/>
+  <parent link="rear_case_241023_1"/>
+  <child link="front_case_1"/>
+</joint>
+
+<joint name="gear_joint" type="fixed">
   <origin xyz="0.0 -0.0336 0.0" rpy="0 0 0"/>
   <parent link="front_case_1"/>
   <child link="planetary_gearset_rotor_bottom_1"/>
 </joint>
 
-<joint name="��ü 12" type="fixed">
+<joint name="bearing_joint" type="fixed">
   <origin xyz="0.0 0.008 0.0" rpy="0 0 0"/>
   <parent link="planetary_gearset_rotor_bottom_1"/>
   <child link="bearing_1"/>
 </joint>
 
-<joint name="ȸ�� 13" type="continuous">
-  <origin xyz="0.270333 -0.192536 0.112178" rpy="0 0 0"/>
+<joint name="continuous_joint" type="continuous">
+  <origin xyz="0.0 -0.0003 0.0" rpy="0 0 0"/>
   <parent link="bearing_1"/>
   <child link="test_bar_1"/>
   <axis xyz="0.0 1.0 0.0"/>
 </joint>
 
-<joint name="��ü 14" type="fixed">
+<joint name="mass_joint" type="fixed">
   <origin xyz="-0.270333 0.175036 -0.302178" rpy="0 0 0"/>
   <parent link="test_bar_1"/>
   <child link="mass_plate_1"/>
